@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-2">
+        <div role="region" aria-labelledby="regionTitle">
+            <h1 id="regionTitle">Enlace de Accesibilidad</h1>
+            <h2>Haz clic sobre el enlace</h2>
+            <p>
+                <a href="https://administracionelectronica.gob.es/pae_Home/pae_Informacion/pae_Accesibilidad.html">Declaración de Accesibilidad</a>
+            </p>
+            <p>
+                <a href="https://administracionelectronica.gob.es/pae_Home/pae_Informacion/pae_Accesibilidad.html">Mapa Web</a>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div role="main" aria-labelledby="graphicTitle">
+            <h1 id="graphicTitle">Gráfico de Ventas</h1>
+
+            <canvas baseChart width="400" height="400" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins" (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)" aria-label="Gráfico de Ventas" role="img"></canvas>
+        </div>
+    </div>
+</div>

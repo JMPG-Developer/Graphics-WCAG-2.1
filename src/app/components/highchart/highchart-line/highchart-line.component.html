@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-md-2">
+        <div role="region" aria-labelledby="regionTitle">
+            <h1 id="regionTitle">Enlace de Accesibilidad</h1>
+            <h2>Haz clic sobre el enlace</h2>
+            <p>
+                <a href="https://administracionelectronica.gob.es/pae_Home/pae_Informacion/pae_Accesibilidad.html">Declaración de Accesibilidad</a>
+            </p>
+            <p>
+                <a href="https://administracionelectronica.gob.es/pae_Home/pae_Informacion/pae_Accesibilidad.html">Mapa Web</a>
+            </p>
+        </div>
+    </div>
+    <div class="col-md-10">
+        <div role="main" aria-labelledby="graphicTitle">
+            <h1 id="graphicTitle">Gráfico de Ventas</h1>
+
+            <highcharts-chart [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="chartOptions" [callbackFunction]="chartCallback" [(update)]="updateFlag" [oneToOne]="oneToOneFlag" [runOutsideAngular]="runOutsideAngularFlag" style="width: 100%; height: 400px; display: block;"
+                aria-label="Gráfico de Ventas" role="img"></highcharts-chart>
+        </div>
+    </div>
+</div>

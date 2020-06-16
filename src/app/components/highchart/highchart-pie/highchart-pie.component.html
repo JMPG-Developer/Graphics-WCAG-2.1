@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-2">
+        <div role="region" aria-labelledby="regionTitle">
+            <h1 id="regionTitle">Enlace de Accesibilidad</h1>
+            <h2>Haz clic sobre el enlace</h2>
+            <p>
+                <a href="https://administracionelectronica.gob.es/pae_Home/pae_Informacion/pae_Accesibilidad.html">Declaración de Accesibilidad</a>
+            </p>
+            <p>
+                <a href="https://administracionelectronica.gob.es/pae_Home/pae_Informacion/pae_Accesibilidad.html">Mapa Web</a>
+            </p>
+        </div>
+
+        <section role="region" aria-labelledby="filterTitle">
+            <h1 id="filterTitle">Filtro años</h1>
+            <h2>Seleccionar un año</h2>
+
+            <mat-selection-list #years label="Filtro Años" [(ngModel)]="selectedAnyos" (ngModelChange)="onNgModelChange($event)">
+                <mat-list-option *ngFor="let anyo of anyos" [value]="anyo">
+                    {{anyo}}
+                </mat-list-option>
+            </mat-selection-list>
+        </section>
+    </div>
+    <div class="col-md-5">
+        <div role="main" aria-labelledby="graphicTitle">
+            <h1 id="graphicTitle">Gráfico de Ventas</h1>
+            <highcharts-chart [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="chartOptions" [callbackFunction]="chartCallback" [(update)]="updateFlag" [oneToOne]="oneToOneFlag" [runOutsideAngular]="runOutsideAngularFlag" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div role="main" aria-labelledby="tableTitle">
+            <h1 id="tableTitle">Detalles de Ventas</h1>
+
+            <mat-table [dataSource]="result" class="table table-bordered" role="grid" aria-label="Detalle Ventas">
+
+                <!-- Name Column -->
+                <ng-container matColumnDef="title">
+                    <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{ element.title }} </mat-cell>
+                </ng-container>
+
+                <!-- Weight Column -->
+                <ng-container matColumnDef="value">
+                    <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{ element.value | number:'3.2-2' }} Lb. </mat-cell>
+                </ng-container>
+
+                <!-- Position Column -->
+                <ng-container matColumnDef="position">
+                    <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{ element.position }} </mat-cell>
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+            </mat-table>
+
+            <p id="tableDescription">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere sapien felis, et dapibus mauris imperdiet vel. Praesent vitae odio eu leo pretium viverra ac at erat. Vestibulum eleifend augue lorem, non dapibus diam faucibus ac. Phasellus ullamcorper
+                hendrerit blandit. Sed sagittis eu neque vitae varius. In mi dui, imperdiet at rutrum vitae, auctor vitae odio.
+            </p>
+        </div>
+    </div>
+</div>
