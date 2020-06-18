@@ -6,7 +6,7 @@ import { GraphicData } from '../models/graphic-data';
 })
 export class MicrostrategyService {
 
-  constructor() { }
+  //constructor(private httpClient:HttpClient) { }
 
   public getValues():Array<GraphicData>{
     let list:Array<GraphicData> = new Array<GraphicData>();
@@ -25,5 +25,9 @@ export class MicrostrategyService {
     }
 
     return list;
+  }
+
+  public login(){
+
   }
 }
