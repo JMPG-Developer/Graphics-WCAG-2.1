@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts';
 import { HighchartsChartModule } from 'highcharts-angular';
 
@@ -37,6 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     BrowserModule,
     AppRoutingModule,
+
+    HttpClientModule,
 
     MatTableModule,
     MatListModule,

@@ -1,0 +1,87 @@
+{
+    "id": "49BEA5054B7B7F0BCF2D359F19E51F47",
+    "name": "Atenciones Mes",
+    "result": {
+        "definition": {
+            "availableObjects": {
+                "attributes": [{
+                        "name": "Mes Datos VVG",
+                        "id": "90A2B5884E1741FFD634CCAE9411B4F7",
+                        "type": "Attribute",
+                        "forms": [{
+                                "id": "0B29BB03460984A21C5D0AB5C88EC171",
+                                "name": "DESC_AMP",
+                                "dataType": "Char",
+                                "baseFormCategory": "DESC_AMP",
+                                "baseFormType": "Text"
+                            },
+                            {
+                                "id": "45C11FA478E745FEA08D781CEA190FE5",
+                                "name": "ID",
+                                "dataType": "Real",
+                                "baseFormCategory": "ID",
+                                "baseFormType": "Number"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CCAA Domicilio",
+                        "id": "202CDDDE446D61534D611087DA1C6013",
+                        "type": "Attribute",
+                        "forms": [{
+                                "id": "CCFBE2A5EADB4F50941FB879CCF1721C",
+                                "name": "DESC",
+                                "dataType": "Char",
+                                "baseFormCategory": "DESC",
+                                "baseFormType": "Text"
+                            },
+                            {
+                                "id": "45C11FA478E745FEA08D781CEA190FE5",
+                                "name": "ID",
+                                "dataType": "Real",
+                                "baseFormCategory": "ID",
+                                "baseFormType": "Number"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Provincia Domicilio",
+                        "id": "6F5D913B442277D6F0B0F492E8EE27EE",
+                        "type": "Attribute",
+                        "forms": [{
+                                "id": "CCFBE2A5EADB4F50941FB879CCF1721C",
+                                "name": "DESC",
+                                "dataType": "Char",
+                                "baseFormCategory": "DESC",
+                                "baseFormType": "Text"
+                            },
+                            {
+                                "id": "45C11FA478E745FEA08D781CEA190FE5",
+                                "name": "ID",
+                                "dataType": "Real",
+                                "baseFormCategory": "ID",
+                                "baseFormType": "Number"
+                            }
+                        ]
+                    }
+                ],
+                "metrics": [{
+                        "name": "Numero Servicios",
+                        "id": "D5D721B146A15DD0333F2897F0B9DCC0",
+                        "type": "Metric"
+                    },
+                    {
+                        "name": "Número Itinerarios",
+                        "id": "74DE8A294374C866113EE7AAFA48B98A",
+                        "type": "Metric"
+                    },
+                    {
+                        "name": "Número Atenciones",
+                        "id": "FBFB33414C1A2D971C9E248E33709AF0",
+                        "type": "Metric"
+                    }
+                ]
+            }
+        }
+    }
+}
